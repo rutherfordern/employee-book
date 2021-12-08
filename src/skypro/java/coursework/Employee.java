@@ -9,17 +9,17 @@ public class Employee {
 
     private String firstName;
     private String lastName;
-    private int salary;
+    private double salary;
     private int department;
     private int id;
 
-    public Employee(String firstName, String lastName, int salary, int department) {
-        countId++;
+    public Employee(String firstName, String lastName, double salary, int department) {
+        // countId++;
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
         // this.department = department;
-        this.id = getCountId();
+        this.id = countId++;
 
         if (department >= MIN_DEPARTMENT && department <= MAX_DEPARTMENT) {
             this.department = department;
@@ -40,7 +40,7 @@ public class Employee {
         return lastName;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -52,7 +52,7 @@ public class Employee {
         return id;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
