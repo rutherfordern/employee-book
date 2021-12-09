@@ -3,7 +3,7 @@ package skypro.java.coursework;
 public class Employee {
 
     public static final int MAX_DEPARTMENT = 5;
-    public static final int MIN_DEPARTMENT = 0;
+    public static final int MIN_DEPARTMENT = 1;
 
     private static int countId;
 
@@ -14,11 +14,9 @@ public class Employee {
     private int id;
 
     public Employee(String firstName, String lastName, double salary, int department) {
-        // countId++;
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
-        // this.department = department;
         this.id = countId++;
 
         if (department >= MIN_DEPARTMENT && department <= MAX_DEPARTMENT) {

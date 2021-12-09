@@ -11,7 +11,6 @@ public class EmployeeBook {
     public void addEmployee(Employee employees) {
         for (int i = 0; i < employee.length; i++) {
             if (employee[i] == null) {
-                //Employee addEmployee = new Employee(firstName, lastName, salary, department);
                 employee[i] = employees;
                 return;
             }
@@ -44,7 +43,6 @@ public class EmployeeBook {
         for (int i = 0; i < employee.length; i++) {
             if (employee[i].getId() == (id)) {
                 employee[i] = null;
-                //return;
             }
         }
     }
@@ -79,7 +77,6 @@ public class EmployeeBook {
                 employees = valueEmployee.getFirstName() + " " + valueEmployee.getLastName();
             }
         }
-
         return employees;
     }
 
@@ -95,7 +92,6 @@ public class EmployeeBook {
                 employees = valueEmployee.getFirstName() + " " + valueEmployee.getLastName();
             }
         }
-
         return employees;
     }
 
@@ -137,7 +133,6 @@ public class EmployeeBook {
                 employees = valueEmployee.getFirstName() + " " + valueEmployee.getLastName();
             }
         }
-
         return employees;
 
     }
@@ -158,7 +153,6 @@ public class EmployeeBook {
                 employees = valueEmployee.getFirstName() + " " + valueEmployee.getLastName();
             }
         }
-
         return employees;
     }
 
@@ -179,7 +173,6 @@ public class EmployeeBook {
                 countEmployeeDepartment++;
             }
         }
-
         System.out.println("Средняя зарплата по выбранному отделу: " + (sum / countEmployeeDepartment));
     }
 
@@ -205,7 +198,6 @@ public class EmployeeBook {
     }
 
     public void getEmployeesLessSalary(double value) {
-
         for (Employee valueEmployee : employee) {
             if (valueEmployee.getSalary() < value) {
                 System.out.println("ID:" + valueEmployee.getId() + "." + " Имя - " + valueEmployee.getFirstName() +
@@ -217,7 +209,6 @@ public class EmployeeBook {
     }
 
     public void getEmployeesBigSalary(double value) {
-
         for (Employee valueEmployee : employee) {
             if (valueEmployee.getSalary() > value) {
                 System.out.println("ID:" + valueEmployee.getId() + "." + " Имя - " + valueEmployee.getFirstName() +
